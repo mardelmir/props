@@ -10,9 +10,9 @@ Recuerda siempre que debes hacer un `npm i` del repositorio para tener todas las
 
 
 2. Entender la Estructura del Proyecto
-`src/App.js`: Este es el componente principal de la aplicación donde se maneja el estado de las tareas y se definen las funciones para agregar, eliminar y marcar tareas como completadas.
-`src/Task.js`: Este componente muestra una tarea individual y maneja los eventos de clic en la tarea.
-`src/AddTaskForm.js`: Este componente proporciona un formulario para agregar nuevas tareas a la lista.
+`src/App.jsx`: Este es el componente principal de la aplicación donde se maneja el estado de las tareas y se definen las funciones para agregar, eliminar y marcar tareas como completadas.
+`src/Task.jsx`: Este componente muestra una tarea individual y maneja los eventos de clic en la tarea.
+`src/AddTaskForm.jsx`: Este componente proporciona un formulario para agregar nuevas tareas a la lista.
 
 ### Cada componente tiene:
 
@@ -29,13 +29,13 @@ const [tasks, setTasks] = useState([
 Lo tendrás ya incluido en el proyecto
 
 - Tendrás que crear una función llamada `addTask` que cree las tareas. Las tareas deben tener los siguientes datos:
-1. Un id -> Contabilizaremos cuantos elementos hay en el array y añadiremos el suguiente número como `id`
+1. Un id -> Contabilizaremos cuantos elementos hay en el array y añadiremos el siguiente número como `id`
 2. Una tarea -> Sacaremos ese valor del input que tenemos que crear en `addTaskForm.jsx`
 3. Tarea completada -> La crearemos por defecto en `false`
 
 *** PISTA *** 
 
-Recuerda que al añadir el la nueva tarea se tienen que mantener las anteriores.
+Recuerda que al añadir la nueva tarea se tienen que mantener las anteriores.
 
 - Necesitaremos una función `deleteTask` que elimine las tareas.
 
