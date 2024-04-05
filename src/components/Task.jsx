@@ -15,3 +15,22 @@ function Task({ task, deleteTask, isCompleted }) {
 }
 
 export default Task
+
+// Corrección clase
+
+// function Task2({ value, deleteTask, toggleTask }) {
+//     return (
+//         <>
+//             {value.map(element =>
+//                 <li key={element.id}>
+//                     <p
+//                         onClick={() => toggleTask(element.id)}
+//                         style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
+//                     >{element.text}
+//                     </p>
+//                     <button onClick={() => deleteTask(element.id)}>Eliminar</button>
+//                 </li>
+//             )}
+//         </>
+//     )
+// }
