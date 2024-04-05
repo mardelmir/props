@@ -14,7 +14,6 @@ const App = () => {
   const addTask = (e) => {
     e.preventDefault()
     const key = `CreatedAt${new Date().getTime()}` // asegura id único
-
     setTasks([
       ...tasks,
       {
@@ -23,7 +22,6 @@ const App = () => {
         completed: false
       }
     ])
-
     setNewTask('')
   }
 
